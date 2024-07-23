@@ -1,0 +1,122 @@
+.slider {
+    font-family: 'Baloo 2', cursive;
+    position: relative;
+    width: 100%;
+    min-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide-content {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+  }
+  .layout{
+    width: 100%;
+    display: block;
+  }
+  .slide-content img{
+    height: 627px;
+  }
+  .slide-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transition: 1s ease-in-out;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 580px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .text-overlay h2 {
+    margin: 0 0 10px;
+    width: 600px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #505F4E;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-overlay p {
+    margin: 0;
+    font-size: small;
+    color: #665345;
+    width: 400px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .slide-button {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: transparent; 
+    color:#505F4E;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    border: 2px #505F4E solid;
+  }
+  
+  .slide-button:hover {
+    background-color: #062F21;
+    color: white;
+    box-shadow: 1px 5px 20px #062F21;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: transparent;    
+    color: black;
+  }
+  .prev{
+    left: 0px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: transparent;    
+    color: black;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color:#062F21;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .slider {
+      width: 100%;
+    }
+  
+    .text-overlay h2 {
+      font-size: 20px;
+    }
+  
+    .text-overlay p {
+      font-size: 14px;
+
+    }
+  }

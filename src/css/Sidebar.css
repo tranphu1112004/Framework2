@@ -1,0 +1,125 @@
+.sidebar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 26px;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-header h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #505F4E;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+  }
+  .sidebar-list li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .sidebar-list a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sidebar-footer {
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .sidebar-footer img{
+    -webkit-filter: brightness(100%);
+    filter: brightness(70%);
+    height: 235px;
+  }
+  .sidebar-footer .sidebar-item{
+    position: relative;
+  }
+  .sidebar-footer .sidebar-item .sidebar-item-text{
+    position: absolute;
+    width: 130px;
+    top: 8%;
+    left: 44%;
+    transform: translateX(-50%);
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  .sidebar-footer .sidebar-item .sidebar-item-text h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 130px;
+  }
+  .sidebar-footer .sidebar-item .sidebar-item-text p{
+    font-size: 15px;
+    color: #dddddd;
+  }
+  .sidebar-item-text i{
+    margin-right: 5px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .sidebar-cta {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .sidebar-cta a:hover {
+    background-color: #0056b3;
+  }
+  
+  .sidebar-filters {
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-price,
+  .filter-size {
+    margin-bottom: 10px;
+  }
+  
+  .filter-price label,
+  .filter-size label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filter-price input,
+  .filter-size input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-price button,
+  .filter-size button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,198 @@
+/* header */
+*{
+    margin: auto;
+    box-sizing: border-box;
+    
+ }
+ header{
+    background-image: linear-gradient(to right, #4d7236, #aa9f97);
+    min-height: 149px;
+    height: auto;
+    max-width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 1px -2px 15px rgba(0,0,0.2);
+ }
+header .menu{
+    padding: 30px 0px;
+    height: 100%;
+    box-shadow: 1px 5px 20px rgba(0,0,0,0.2);
+}
+header .menu .topmenu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+header .menu .topmenu .user{
+    display: flex;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 80px;
+}
+header .menu .topmenu .user .userinfo{
+    display: flex;
+    width: 100px;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+}
+header .menu .topmenu .user .cart{
+    width: 100px;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+}
+header .menu .topmenu .search{
+    position: relative;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+header .menu .topmenu .search form{
+    width: 100%;
+}
+
+header .menu .topmenu .search form input{
+    position: absolute;
+    height: 43px;
+    width: 525px;
+    padding: 0 30px;
+    /* background-color: transparent; */
+    border: none;
+    outline: none;
+    font-size:small;
+    transition: 0.3s;
+    color: black;
+    border-radius: 2px;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+}
+header .menu .topmenu .language{
+    position: relative;
+}
+header .menu .topmenu .language select{
+    position: absolute;
+    left: 350px;
+    width: 70px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    top: -8px;
+}
+header .menu .topmenu .language select option{
+    color: black;
+    font-size: small;
+    font-weight: 300;  
+}
+
+/* header .menu .topmenu .search form input:focus{
+    width: 600px;
+} */
+header .menu .topmenu .search form button{
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 485px;
+    transition: 0.3s;
+    height:44px ;
+}
+
+header .menu .downmenu {
+    border-top: 0.2px solid rgb(255, 255, 255);
+    width: 1245px;
+    margin-top: 15px;
+}
+
+header .menu .downmenu .down {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .menu .downmenu .down .onemenu {
+    position: relative;
+    margin-top: 15px;
+}
+
+header .menu .downmenu .down .onemenu .twomenu {
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    left: 0;
+    width: 100px;
+    background-color: white;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 300;
+    font-size: small;
+    display: none;
+}
+
+header .menu .downmenu .down .onemenu:hover .twomenu {
+    display: block;
+    top: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+header .menu .downmenu .down .onemenu span{
+    margin-left: 2px;
+}
+header .menu .downmenu .down .onemenu .linh {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.8s ease-in-out;
+}
+
+header .menu .downmenu .down .onemenu .linh:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+header .menu .downmenu .down .onemenu .twomenu li {
+    border-bottom: 1px solid #ddd;
+}
+
+header .menu .downmenu .down .onemenu .twomenu li:last-child {
+    border-bottom: none;
+}
+
+header .menu .downmenu .down .onemenu .twomenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header .menu .downmenu .down .onemenu .twomenu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    header .menu .downmenu {
+        width: 100%;
+    }
+
+    header .menu .downmenu .down {
+        flex-direction: column;
+    }
+
+    header .menu .downmenu .down .onemenu {
+        width: 100%;
+    }
+
+    header .menu .downmenu .down .onemenu .twomenu {
+        width: 100%;
+    }
+}
