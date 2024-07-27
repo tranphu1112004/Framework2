@@ -16,6 +16,7 @@ const ListProduct = () => {
       const productData = await GetAllProduct();
       setCollection(data);
       setProduct(productData);
+      
     })();
   }, []);
   return (

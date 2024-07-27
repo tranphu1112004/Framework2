@@ -9,6 +9,10 @@ import Home from './components/Home';
 import ListProduct from './components/ProductList';
 import Detail from './components/Detail';
 import Cart from './components/cart';
+import ProductContext from './context/productContext';
+import ListProductAdmin from './components/admin/productlistAdmin';
+import AddProduct from './components/admin/AddAdmin';
+import EditProduct from './components/admin/EditAdmin';
 
 function App() {
   const routes = useRoutes([
@@ -29,9 +33,15 @@ function App() {
     },
     {
       path: 'admin',
-      Component: LayoutAdmin,
+      element: (
+        <ProductContext>
+          <LayoutAdmin />
+        </ProductContext>
+      ),
       children: [
-        // { path: 'list', element:<Products products={products}/> },
+           { path: '', element:<ListProductAdmin/> },
+           { path: 'add', Component:AddProduct },
+           { path: 'edit/:id', element:<EditProduct/> },
       ],
     },
   ]);
